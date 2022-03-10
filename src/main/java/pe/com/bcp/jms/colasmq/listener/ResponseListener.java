@@ -31,29 +31,13 @@ public class ResponseListener
         ConfigurationLogStash envio = new ConfigurationLogStash();
         TextMessage textMessage = (TextMessage) message;
 
-        String msg = textMessage.getText();
-
-        Random random = new Random();
-        int posRandom = random.nextInt(Constants.CODIGOS_ESTADO.length);
-        String nuevaCadena = this.insertString(msg, Constants.CODIGOS_ESTADO[posRandom], Constants.INDEX_RESPONSE);
+        String msg = textMessage.getText();    
 
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
-        CamposBean bean = envio.manageMsg(nuevaCadena, Constants.RESPONSE);
+        CamposBean bean = envio.manageMsg(msg, Constants.RESPONSE);
 
         envio.conexion(gson.toJson(bean), portSogi, Constants.RESPONSE, hostSogi);
     }
 
-    public String insertString(String originalString, String stringToBeInserted, Integer index)
-    {
-        StringBuilder newString = new StringBuilder();
-
-        for (int i = 0; i < originalString.length(); i++) {
-            newString.append(originalString.charAt(i));
-
-            if (i == index) newString.append(stringToBeInserted);
-        }
-
-        return newString.toString();
-    }
 }

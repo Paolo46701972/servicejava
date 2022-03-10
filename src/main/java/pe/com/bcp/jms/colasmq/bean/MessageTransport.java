@@ -8,5 +8,4 @@ import lombok.Setter;
 public class MessageTransport {
 	
 	private String identifier;
-	private Mensaje message;
 }
