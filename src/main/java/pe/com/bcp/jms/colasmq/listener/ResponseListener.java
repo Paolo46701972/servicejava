@@ -36,6 +36,7 @@ public class ResponseListener
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
         CamposBean bean = envio.manageMsg(msg, Constants.RESPONSE);
+        log.info("Campos a enviar:{}",bean);
 
         envio.conexion(gson.toJson(bean), portSogi, Constants.RESPONSE, hostSogi);
     }

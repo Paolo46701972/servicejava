@@ -57,16 +57,13 @@
 		<profile>
 			<id>local</id>
 			<properties>
-				<ibm.mq.manager>QM.202203</ibm.mq.manager>
-				<ibm.mq.channel>DEV.APP.SVRCONN</ibm.mq.channel>
-				<ibm.port.mq>1414</ibm.port.mq>
-				<ibm.mq.user>admin</ibm.mq.user>
-				<ibm.mq.password>passw0rd</ibm.mq.password>
-				<port.elk.sogi>10000</port.elk.sogi>
-				<port.elk.was>10001</port.elk.was>
-				<mq.host>localhost</mq.host>
-				<mq.elk.logstash>localhost</mq.elk.logstash>
-				<port.server>8090</port.server>
+				<ibm.mq.manager>QMSRE</ibm.mq.manager>
+                <ibm.mq.channel>DEV.APP.SVRCONN</ibm.mq.channel>
+                <ibm.port.mq>1414</ibm.port.mq>
+                <ibm.mq.user>APCPDES</ibm.mq.user>
+                <port.elk.sogi>9700</port.elk.sogi>
+                <mq.host>pcrepsod01.credito.bcp.com.pe</mq.host>
+                <elk.host>172.29.116.25</elk.host>
 			</properties>
 		</profile>
 	</profiles>

@@ -1,0 +1,14 @@
+#IBM MQ
+ibm.mq.queueManager=@ibm.mq.manager@
+ibm.mq.channel=@ibm.mq.channel@
+ibm.mq.connName=@mq.host@(@ibm.port.mq@)
+ibm.mq.user=@ibm.mq.user@
+ibm.mq.password=@ibm.mq.password@
+
+#port
+server.port=@port.server@
+
+#elk
+port.elk.sogi=@port.elk.sogi@
+port.elk.was=@port.elk.was@
+host.elk=@mq.elk.logstash@
