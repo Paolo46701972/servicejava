@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pe.com.bcp</groupId>
-	<artifactId>colasMQ</artifactId>
+	<artifactId>connector-mq-elk-crep</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>colasMQ</name>
 	<description>Sogi crep BCP</description>

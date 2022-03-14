@@ -2,7 +2,7 @@ package pe.com.bcp.jms.colasmq.listener;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import lombok.extern.slf4j.Slf4j;
+//import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
@@ -17,7 +17,7 @@ import java.text.ParseException;
 import java.util.Random;
 
 @Component
-@Slf4j
+//@Slf4j
 public class ResponseListener
 {
     @Value("${port.elk.sogi}")
@@ -36,7 +36,7 @@ public class ResponseListener
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
         CamposBean bean = envio.manageMsg(msg, Constants.RESPONSE);
-        log.info("Campos a enviar:{}",bean);
+        //log.info("Campos a enviar:{}",bean);
 
         envio.conexion(gson.toJson(bean), portSogi, Constants.RESPONSE, hostSogi);
     }
