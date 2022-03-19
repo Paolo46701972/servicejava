@@ -40,7 +40,18 @@ public class ConfigurationLogStash {
 			int ini = cad.lastIndexOf(Constants.TARGET_PLOT_START);
 			int fin = cad.lastIndexOf(Constants.TARGET_PLOT_END);
 			cad = cad.substring(ini + 6, fin);
-						
+
+			String tipo = cad.substring(0, 6);
+			cad = cad.substring(6, cad.length()-6);
+			bean.setCodigoEstado(tipo);
+
+			//temporal
+			/*if(type.equals(Constants.RESPONSE)){
+				String tipo = cad.substring(0, 6);
+				cad = cad.substring(6, cad.length()-6);
+				bean.setCodigoEstado(tipo);
+			}*/
+			
 			tmp = totCad;
 			totCad = totCad + Constants.START_COD_ENTERPRISE;
 		    ncad = cad.substring(tmp,totCad);

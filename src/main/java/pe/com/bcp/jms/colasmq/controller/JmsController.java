@@ -36,7 +36,10 @@ public class JmsController
             ResponseMessage response = new ResponseMessage();
 
             try {
-                
+                log.info("Enviando a request...");
+                MQQueue orderRequestQueue = new MQQueue(Constants.QUEUE_REQUEST);
+                jmsTemplate.convertAndSend(orderRequestQueue, requestPLot.toString());
+
                 log.info("Enviando a response...");
                 MQQueue orderRequestQueue2 = new MQQueue(Constants.QUEUE_RESPONSE);
                 jmsTemplate.convertAndSend(orderRequestQueue2, requestPLot.toString());

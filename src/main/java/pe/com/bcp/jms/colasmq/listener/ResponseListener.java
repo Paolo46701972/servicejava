@@ -2,7 +2,7 @@ package pe.com.bcp.jms.colasmq.listener;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-//import lombok.extern.slf4j.Slf4j;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
@@ -17,7 +17,7 @@ import java.text.ParseException;
 import java.util.Random;
 
 @Component
-//@Slf4j
+@Slf4j
 public class ResponseListener
 {
     @Value("${port.elk.sogi}")
@@ -31,14 +31,29 @@ public class ResponseListener
         ConfigurationLogStash envio = new ConfigurationLogStash();
         TextMessage textMessage = (TextMessage) message;
 
-        String msg = textMessage.getText();    
+        String msg = textMessage.getText();
+
+        /*Random random = new Random();
+        int posRandom = random.nextInt(Constants.CODIGOS_ESTADO.length);
+        String nuevaCadena = this.insertString(msg, Constants.CODIGOS_ESTADO[posRandom], Constants.INDEX_RESPONSE);*/
 
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
         CamposBean bean = envio.manageMsg(msg, Constants.RESPONSE);
-        //log.info("Campos a enviar:{}",bean);
 
         envio.conexion(gson.toJson(bean), portSogi, Constants.RESPONSE, hostSogi);
     }
 
+    /*public String insertString(String originalString, String stringToBeInserted, Integer index)
+    {
+        StringBuilder newString = new StringBuilder();
+
+        for (int i = 0; i < originalString.length(); i++) {
+            newString.append(originalString.charAt(i));
+
+            if (i == index) newString.append(stringToBeInserted);
+        }
+
+        return newString.toString();
+    }*/
 }
