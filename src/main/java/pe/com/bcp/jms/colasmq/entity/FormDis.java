@@ -1,4 +1,4 @@
-package pe.com.bcp.jms.colasmq.entity;
+/*package pe.com.bcp.jms.colasmq.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -22,3 +22,4 @@ public class FormDis
         this.status= Constants.STARTED;
     }
 }
+*/

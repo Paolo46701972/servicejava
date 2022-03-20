@@ -1,4 +1,4 @@
-package pe.com.bcp.jms.colasmq.service;
+/*package pe.com.bcp.jms.colasmq.service;
 
 import org.springframework.http.ResponseEntity;
 import pe.com.bcp.jms.colasmq.bean.RequestPLot;
@@ -9,3 +9,4 @@ public interface WasService
 {
     public Mono<ResponseEntity<ResponseMessage>> generateBody(RequestPLot requestPLot);
 }
+*/

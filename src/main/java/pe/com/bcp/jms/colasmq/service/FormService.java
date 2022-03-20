@@ -1,4 +1,4 @@
-package pe.com.bcp.jms.colasmq.service;
+/*package pe.com.bcp.jms.colasmq.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -49,3 +49,4 @@ public class FormService {
     }
 
 }
+*/

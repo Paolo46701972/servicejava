@@ -1,4 +1,4 @@
-package pe.com.bcp.jms.colasmq.controller;
+/*package pe.com.bcp.jms.colasmq.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ibm.mq.jms.MQQueue;
@@ -64,3 +64,4 @@ public class JmsController
         return ResponseEntity.status(message.getStatus()).body(message);
     }
 }
+*/

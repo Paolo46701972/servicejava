@@ -16,17 +16,19 @@ public enum Constants {
 
     //Indices
     public static final Integer INDEX_RESPONSE = 18;
-    public static final Integer SIZE_PLOT = 427;
-    public static final Integer START_COD_ENTERPRISE = 15;
+    public static final Integer SIZE_PLOT = 15;
+    public static final Integer START_COD_ENTERPRISE = 1;
     public static final Integer TYPE_OPER = 6;
-    public static final Integer DATE_HOUR = 14;
+    public static final Integer DATE_HOUR = 8;
+    public static final Integer TIME_STAMP = 6;
     public static final Integer CHANNEL = 2;
     public static final Integer NUMBER_OPER = 8;
+    public static final Integer COD_ESTADO = 5;
 
     //Tipo de trama
     public static final String REQUEST = "REQUEST";
     public static final String RESPONSE = "RESPONSE";
-    public static final String WAS = "WAS";
+//    public static final String WAS = "WAS";
 
     //Target
     public static final String TARGET_PLOT_START = "<Data>";
@@ -37,6 +39,10 @@ public enum Constants {
     public static final String DATE_FORMAT_2 = "yyyy-MM-dd HH:mm:ss";
     public static final String DATE_FORMAT_3 = "MM/dd/yy HH:mm:ss";
     public static final String DATE_FORMAT_4 = "MM/dd/yy";
+
+    //Format TimeStamp
+    public static final String TIME_FORMAT_1 = "HHmmss";
+    public static final String TIME_FORMAT_2 = "HH:mm:ss";
 
     //Regex
     public static final String COMMA = ",";
@@ -52,7 +58,7 @@ public enum Constants {
     public static final Integer PERCENTAGE_TOTAL = 100;
 
     //Estado instancia
-    public static final String STOPPED = "STOPPED";
-    public static final String STARTED = "STARTED";
+//    public static final String STOPPED = "STOPPED";
+//    public static final String STARTED = "STARTED";
 
 }

@@ -1,4 +1,4 @@
-package pe.com.bcp.jms.colasmq.bean;
+/*package pe.com.bcp.jms.colasmq.bean;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -20,3 +20,4 @@ public class Mensaje {
 	private String resultadoReinicio;
 	private Float disponibilidadInstancia;
 }
+*/

@@ -1,4 +1,4 @@
-package pe.com.bcp.jms.colasmq.bean;
+/*package pe.com.bcp.jms.colasmq.bean;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,3 +11,4 @@ public class MessageTransport {
 	private String identifier;
 	private Mensaje message;
 }
+*/

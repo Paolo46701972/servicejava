@@ -1,4 +1,4 @@
-package pe.com.bcp.jms.colasmq.service;
+/*package pe.com.bcp.jms.colasmq.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
@@ -129,3 +129,4 @@ public class WasServiceImpl implements WasService {
     }
 }
 
+*/

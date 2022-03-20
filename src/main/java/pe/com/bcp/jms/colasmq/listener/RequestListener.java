@@ -1,12 +1,12 @@
 package pe.com.bcp.jms.colasmq.listener;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+//import com.google.gson.Gson;
+//import com.google.gson.GsonBuilder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
-import pe.com.bcp.jms.colasmq.bean.CamposBean;
+//import pe.com.bcp.jms.colasmq.bean.CamposBean;
 import pe.com.bcp.jms.colasmq.config.ConfigurationLogStash;
 import pe.com.bcp.jms.colasmq.constants.Constants;
 

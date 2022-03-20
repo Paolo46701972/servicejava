@@ -11,6 +11,7 @@ public class CamposBean {
 	private String codEmpresa;
 	private String tipoOperacion;
 	private String fechaHora;
+	private String tiempoTrama;
 	private String canal;
 	private String numOperacion;
 }
